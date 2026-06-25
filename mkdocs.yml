@@ -1,0 +1,71 @@
+site_name: cicd-pipeline-train-schedule-git DeepWiki
+site_description: Auto-generated engineering DeepWiki for rseshi1/cicd-pipeline-train-schedule-git
+docs_dir: deepwiki
+site_dir: deepwiki-site
+use_directory_urls: true
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.sections
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+nav:
+  - Home: index.md
+  - Repository Overview: repository-overview.md
+  - Architecture: architecture.md
+  - Code Structure: code-structure.md
+  - Data Models: data-models.md
+  - API Reference: api-reference.md
+  - Workflows: workflows.md
+  - Deployment: deployment.md
+  - Infrastructure: infrastructure.md
+  - Security: security.md
+  - Testing: testing.md
+  - CI/CD: ci-cd.md
+  - Dependencies: dependencies.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md
+  - Diagrams:
+      - Architecture: diagrams/architecture.md
+      - Service Interactions: diagrams/sequence.md
+      - CI/CD Pipeline: diagrams/ci-cd.md
+      - Data Flow: diagrams/data-flow.md
+      - Deployment Topology: diagrams/deployment.md
